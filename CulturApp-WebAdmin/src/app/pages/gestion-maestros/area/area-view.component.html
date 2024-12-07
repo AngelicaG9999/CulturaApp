@@ -1,0 +1,102 @@
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+<!-- begin:: Head -->
+<div class="kt-subheader   kt-grid__item">
+    <div class="kt-container">
+        <div class="kt-subheader__main">
+            <h3 class="kt-subheader__title">
+            Detalle Área
+            </h3>
+            <span class="kt-subheader__separator kt-subheader__separator--v"></span>
+        </div>
+        <div class="kt-subheader__toolbar">
+            <button type="button" class="btn btn-outline-secondary btn-icon" title="Atrás" (click)="atras()"><i class="fa fa-chevron-circle-left"></i></button>
+            <button type="button" class="btn btn-outline-primary btn-icon" title="Nuevo" (click)="newItem()"><i class="fa fa-file-text-o"></i></button>
+        </div>
+    </div>
+</div>
+<!-- end:: Head -->
+
+<!-- begin:: Content -->
+<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+
+    <!--begin:: Portlet - Base -->
+    <div class="kt-portlet ">
+        <div class="kt-portlet__body">
+
+            <!--Info base-->
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="row">
+
+                    <div class="col-md-2">
+                        <!-- <img src="{{ currentArea.ImagenURL }}" class="img-fit" width='150' height='150' /> -->
+                    </div>
+
+                    <div class="col-md-10">
+                        <div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="card-title m-t-10">{{ currentArea.Nombre }}</h3>
+                                <!-- <h5 class="card-subtitle">{{ currentArea.Descripcion }}</h5> -->
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <small>Modalidad</small>
+                                <h6>{{ currentArea.Modalidad}}</h6>
+                            </div>
+
+                            <div class="col-md-2">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                            <small>Descripción</small>
+                            <h6>{{ currentArea.Descripcion }}</h6>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Menu de opciones-->
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-outline-warning btn-icon" title="Editar" (click)="editItem()"><i class="fas fa-edit"></i></button>&nbsp;
+                    <button type="button" class="btn btn-outline-danger btn-icon" title="Eliminar" (click)="deleteItem()"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end:: Portlet - Base -->
+
+    <!--Begin:: Portlet - Detalle -->
+    <div class="kt-portlet">
+        <div class="kt-portlet__body">
+
+        </div>
+    </div>
+    <!--End:: Portlet - Detalle -->
+
+</div>
+<!-- end:: Content -->
+

@@ -1,0 +1,69 @@
+<br/>
+
+<div class="row">
+    <div class="col-md-4">
+        <small>Modalidad</small>
+        <h6>{{ currentInfoProyecto.Modalidad }}</h6>
+    </div>
+
+    <div class="col-md-4">
+        <small>Área</small>
+        <h6>{{ currentInfoProyecto.Area }}</h6>
+    </div>
+
+    <div class="col-md-4">
+        <small>Línea</small>
+        <h6>{{ currentInfoProyecto.Linea }}</h6>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <small>Proyecto</small>
+        <h6><a href="{{ currentInfoProyecto.ProyectoUrl }}" target="_blank">Ver</a></h6>
+    </div>
+
+    <div class="col-md-2">
+        <small>Hoja de Vida</small>
+        <h6><a href="{{ currentInfoProyecto.CurriculumUrl }}" target="_blank">Ver</a></h6>
+    </div>
+
+    <div class="col-md-2">
+        <small>Cédula</small>
+        <h6><a href="{{ currentInfoProyecto.CedulaUrl }}" target="_blank">Ver</a></h6>
+    </div>
+
+    <div class="col-md-2">
+        <small>Servicios Públicos</small>
+        <h6><a href="{{ currentInfoProyecto.ServiciosPublicosUrl }}" target="_blank">Ver</a></h6>
+    </div>
+
+    <div class="col-md-2">
+        <small>RUT</small>
+        <h6><a href="{{ currentInfoProyecto.RutUrl }}" target="_blank">Ver</a></h6>
+    </div>
+
+    <div class="col-md-2">
+        <small>Certificado Vencindad</small>
+        <h6><a href="{{ currentInfoProyecto.CertificadoVencindadUrl }}" target="_blank">Ver</a></h6>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <small>Autorización Menores</small>
+        <h6><a href="{{ currentInfoProyecto.AutorizacionMenoresUrl }}" target="_blank">Ver</a></h6>
+    </div>
+
+    <div class="col-md-2">
+        <small>Declaración Derechos De Autor</small>
+        <h6><a href="{{ currentInfoProyecto.DeclaracionJuramentadaUrl }}" target="_blank">Ver</a></h6>
+    </div>
+
+    <div class="col-md-2" >
+        <small>Maqueta</small>
+        <h6><a href="{{ currentInfoProyecto.MaquetaUrl }}" target="_blank" *ngIf="currentInfoProyecto.MaquetaUrl.length > 0">Ver</a></h6>
+    </div>
+
+</div>

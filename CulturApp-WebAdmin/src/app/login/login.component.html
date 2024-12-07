@@ -1,0 +1,108 @@
+<ngx-spinner></ngx-spinner>
+<!-- begin:: Page -->
+<div class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <div class="kt-grid kt-grid--ver kt-grid--root">
+        <div class="kt-grid kt-grid--hor kt-grid--root  kt-login kt-login--v5 kt-login--signin" id="kt_login">
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--desktop kt-grid--ver-desktop kt-grid--hor-tablet-and-mobile" style="background-image: url(./assets/media//bg/bg-3.jpg);">
+                <div class="kt-login__left">
+                    <div class="kt-login__wrapper">
+                        <div class="kt-login__content">
+                            <a class="kt-login__logo" href="#">
+                                <img src="./assets/media/logos/logo-5.png">
+                            </a>
+                            <h3 class="kt-login__title">SYSCORP TECHOLOGY</h3>
+                            <span class="kt-login__desc">
+                                No estamos en una era de cambios, sino en un cambio de era caracterizado por la digitalización de prácticamente todo lo que nos rodea.
+                                </span>
+                            <div class="kt-login__actions">
+                                <!-- <button type="button" id="kt_login_signup" class="btn btn-outline-brand btn-pill">Get An Account</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-login__divider">
+                    <div></div>
+                </div>
+
+                <div class="kt-login__right">
+                    <div class="kt-login__wrapper">
+                        <div class="kt-login__signin">
+                            <div class="kt-login__head">
+                                <h3 class="kt-login__title">Ingrese a su cuenta</h3>
+                            </div>
+                            <div class="kt-login__form">
+                                <form ngNativeValidate #f="ngForm" class="kt-form">
+
+                                    <div class="form-group">
+                                        <mat-form-field class="form-control-login">
+                                            <input matInput [(ngModel)]="empresa" placeholder="Empresa" name="empresa" autocomplete="on" required>
+                                        </mat-form-field>
+                                    </div>
+
+                                    <!-- <div class="form-group">
+                                        <mat-form-field class="form-control-login" currencyMask>
+                                            <input currencyMask matInput type="text" placeholder="Precio" [ngModel]="precio" name="precio" autocomplete="off" />
+                                        </mat-form-field>
+                                    </div> -->
+
+                                    <div class="form-group">
+                                        <mat-form-field class="form-control-login">
+                                            <input matInput [(ngModel)]="email" placeholder="Correo del usuario" name="email" autocomplete="on" required>
+                                        </mat-form-field>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <mat-form-field class="form-control-login">
+                                            <input matInput [(ngModel)]="password" type="password" placeholder="Contraseña" name="password" autocomplete="off" required>
+                                        </mat-form-field>
+                                    </div>
+
+                                    <div class="row kt-login__extra">
+                                        <div class="col kt-align-left">
+                                            <mat-checkbox [(ngModel)]="recuerdame" name="recuerdame">Recuérdame</mat-checkbox>
+                                        </div>
+                                        <div class="col kt-align-right">
+                                            <a href="javascript:;" class="kt-link" (click)="probar()">Olvido su contraseña ?</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="kt-login__actions">
+                                        <!-- <button id="kt_login_signin_submit" class="btn btn-brand btn-pill btn-elevate" type="submit">Entrar</button> -->
+                                        <button mat-button class="btn btn-brand btn-pill btn-elevate" (click)="ingresar(f)">Entrar</button>
+                                    </div>
+
+                                    <div class="row kt-login__extra">
+                                        <div class="col kt-align-right">
+                                            <br/>
+                                            <h6>Versión: 1.0.3.8<br/> Fecha: 2022-02-24 16.11</h6>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="kt-login__forgot">
+                            <div class="kt-login__head">
+                                <h3 class="kt-login__title">Forgotten Password ?</h3>
+                                <div class="kt-login__desc">Enter your email to reset your password:</div>
+                            </div>
+                            <div class="kt-login__form">
+                                <form class="kt-form" action="">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Email" name="email" id="kt_email" autocomplete="off">
+                                    </div>
+                                    <div class="kt-login__actions">
+                                        <button id="kt_login_forgot_submit" class="btn btn-brand btn-pill btn-elevate">Request</button>
+                                        <button id="kt_login_forgot_cancel" class="btn btn-outline-brand btn-pill">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end:: Page -->

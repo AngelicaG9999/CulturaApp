@@ -1,0 +1,6 @@
+{
+  "UrlApiAdmin": "https://api.syscorp.app/Admin/",
+  "UrlApiCulturApp": "https://localhost:44305/",
+  "UrlDrive": "https://drive.syscorp.app/",
+  "PasswordKey": "SysCorp"
+}

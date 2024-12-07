@@ -1,0 +1,18 @@
+<h2 mat-dialog-title> {{ Titulo }} </h2>
+
+<div mat-dialog-content>
+
+    <div class="row" *ngIf="ListaComponentes.length != 0">
+
+        <div mat-card *ngFor="let _Componente of ListaComponentes" class="col-md-2">
+            {{ _Componente.Nombre }}
+            <!-- <a href="{{ _Componente.Url }}" class="dropdown-item pointer">{{ _Componente.Nombre }}</a> -->
+        </div>
+
+    </div>
+
+
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-button class="mat-raised-button btn-primary" (click)="close()">Aceptar</button>
+</div>

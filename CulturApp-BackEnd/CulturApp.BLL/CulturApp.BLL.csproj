@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GestionDatosMaestros\ConfiguracionProductos\**" />
+    <EmbeddedResource Remove="GestionDatosMaestros\ConfiguracionProductos\**" />
+    <None Remove="GestionDatosMaestros\ConfiguracionProductos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CulturApp.BDO\CulturApp.BDO.csproj" />
+    <ProjectReference Include="..\CulturApp.DAL\CulturApp.DAL.csproj" />
+    <ProjectReference Include="..\CulturApp.Utility\CulturApp.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
